@@ -1,0 +1,24 @@
+Modern warfare: Stuxnet
+Where is the secret: 0x56558160 (Tut 4 43:57)
+handle with care: 
+Bukan: 
+* Sanitize
+* Hack
+* Attack
+* Remove
+* Validate
+* Patch
+* Analyze
+Learning XML: 39.95 
+Peek at the stack: x/20x (Tut 3 21:07)
+Bukan: 
+* frame
+* info
+* info frame
+* bt
+* backtrace
+* print
+* disass
+
+https://web.ecs.syr.edu/~wedu/Teaching/CompSec/LectureNotes_New/Buffer_Overflow.pdf 
+\x31\xc0\x50\x68//sh\x68/bin\x89\xe3\x50\x53\x89\xe1\x99\xb0\x0b\xcd\x80
