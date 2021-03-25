@@ -1,6 +1,6 @@
 Modern warfare: Stuxnet
 Where is the secret: 0x56558160 (Tut 4 43:57)
-handle with care: 
+handle with care: defang
 Bukan: 
 * Sanitize
 * Hack
@@ -9,6 +9,7 @@ Bukan:
 * Validate
 * Patch
 * Analyze
+* ssrf
 Learning XML: 39.95 
 Peek at the stack: x/20x (Tut 3 21:07)
 Bukan: 
