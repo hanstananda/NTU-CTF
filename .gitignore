@@ -139,6 +139,7 @@ cython_debug/
 
 # IDE
 .vscode/
+.idea/
 
 # Executables self-made 
 *.exe
