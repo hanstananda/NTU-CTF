@@ -45,6 +45,7 @@ const char DAT_00012008[100]={0x7a, 0x2e, 0x6e, 0x68, 0x1d, 0x65, 0x16, 0x7c, 0x
 void FUN_000106bd(int param_1,uint param_2,undefined4 param_3)
 
 {
+  printf("test %d %lld %lld\n", param_1, param_2, param_3);
   int in_GS_OFFSET;
   uint local_18;
   unsigned char local_14 [4];
@@ -77,6 +78,7 @@ char * FUN_0001082b(char *param_1,uint param_2)
   __dest = (char *)malloc((param_2 & 0xfffffffc) + 5);
   strncpy(__dest,param_1,__n);
   local_1c = 0xabcf00d;
+  printf("dest,n=%s,%d\n",__dest, __n);
   while (local_1c < 0xdeadbeef) {
     FUN_000106bd((int)__dest,__n,local_1c);
     local_1c = local_1c + 0x1fab4d;
@@ -165,8 +167,9 @@ undefined4 FUN_000109af(undefined1 param_1)
   printf("input the flag: ");
   fgets(pcVar1,512,stdin);
   sVar2 = strnlen(DAT_00012008,0x200);
+  printf("pcVar1=%s\n",pcVar1);
   pcVar1 = FUN_0001082b(pcVar1,sVar2);
-  printf("%s\n",pcVar1);
+  printf("pcVar1=%s\n",pcVar1);
   FUN_000107c2((int)pcVar1,sVar2,1);
   iVar3 = FUN_000108c4(pcVar1,sVar2);
   if (iVar3 == 1) {
